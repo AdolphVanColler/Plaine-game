@@ -5,7 +5,7 @@ A pixel-art plane game set over Cape Town, built with [Three.js](https://threejs
 Fly low. The closer you skim the rooftops, the faster the points stack — but the
 ground is solid and so is every wall. **Low is good.**
 
-**[▶ Play it](https://adolphvancoller.github.io/Plaine-game/)** *(once GitHub Pages is switched on — see below)*
+**[▶ Play it](https://adolphvancoller.github.io/Plane-Game/)** *(once GitHub Pages is switched on — see below)*
 
 ---
 
@@ -43,8 +43,8 @@ There is no build step and no dependencies to install. The whole game is one
 self-contained `index.html`.
 
 ```bash
-git clone https://github.com/AdolphVanColler/Plaine-game.git
-cd Plaine-game
+git clone https://github.com/AdolphVanColler/Plane-Game.git
+cd Plane-Game
 ```
 
 Then either open `index.html` in a browser directly, or serve the folder:
@@ -65,7 +65,7 @@ The game is already named `index.html`, so it is ready to serve:
 2. Under *Build and deployment*, set **Source** to `Deploy from a branch`.
 3. Choose branch `main`, folder `/ (root)`, and press **Save**.
 
-It goes live at `https://adolphvancoller.github.io/Plaine-game/` a minute or so later.
+It goes live at `https://adolphvancoller.github.io/Plane-Game/` a minute or so later.
 
 ## How it's built
 
