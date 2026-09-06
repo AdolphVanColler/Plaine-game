@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#4FB3E8">
 <meta name="description" content="A pixel-art plane game over Cape Town. Fly low, skim the rooftops, and score on clearance. Built with Three.js.">
-<meta property="og:title" content="Plaine Game">
+<meta property="og:title" content="Plane Game">
 <meta property="og:description" content="A pixel-art plane game over Cape Town. Low is good.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#9992;</text></svg>">
-<title>Plaine Game</title>
+<title>Plane Game</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
@@ -160,7 +160,7 @@ body{margin:0;background:var(--sky);color:#fff;overflow:hidden;font-family:var(-
     <div class="strip">
       <span>DIE VAN COLLERS</span>
       <span>LOW IS GOOD</span>
-      <span>PLAINE GAME</span>
+      <span>PLANE GAME</span>
     </div>
   </div>
 </div>
@@ -717,7 +717,7 @@ body{margin:0;background:var(--sky);color:#fff;overflow:hidden;font-family:var(-
   var pk = { live: false, x: 0, y: 0 };
   var frontier = 0, towX = 0, towY = 0;
 
-  try { st.best = parseInt(localStorage.getItem("plaine_best") || "0", 10) || 0; } catch (e) {}
+  try { st.best = parseInt(localStorage.getItem("plane_best") || "0", 10) || 0; } catch (e) {}
   function pad(n) { n = Math.max(0, Math.floor(n)); var s = "" + n; while (s.length < 5) s = "0" + s; return s; }
   $("#best").textContent = pad(st.best);
 
@@ -821,7 +821,7 @@ body{margin:0;background:var(--sky);color:#fff;overflow:hidden;font-family:var(-
     var sc = Math.floor(st.score), isBest = sc > st.best;
     if (isBest) {
       st.best = sc;
-      try { localStorage.setItem("plaine_best", String(st.best)); } catch (e) {}
+      try { localStorage.setItem("plane_best", String(st.best)); } catch (e) {}
       $("#best").textContent = pad(st.best);
     }
     var c = st.closest === Infinity ? 99 : st.closest * 0.5;

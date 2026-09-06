@@ -1,4 +1,4 @@
-# Plaine Game
+# Plane Game
 
 A pixel-art plane game set over Cape Town, built with [Three.js](https://threejs.org).
 
